@@ -6,9 +6,6 @@
 #SBATCH --mem-per-cpu=4800       # in megabytes, unless unit explicitly stated
 #SBATCH --error=%J.err         # redirect stderr to this file
 #SBATCH --output=%J.out        # redirect stdout to this file
-#SBATCH --mail-user=mdpllard@memphis.edu  # email address used for event notification
-#SBATCH --mail-type=end                                   # email on job end
-#SBATCH --mail-type=fail                                  # email on job failure
 #SBATCH --time=8-00:00:00
 
 
@@ -25,25 +22,22 @@ echo \$SLURM_MEM_PER_CPU=${SLURM_MEM_PER_CPU}
 
 
 
-#module load repeatmodeler
-#source /home/mdpllard/miniconda3/bin/activate repeatmasker
-
 module load repeatmodeler
 
-#gunzip /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna.gz
+gunzip /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna.gz
 
-#BuildDatabase -name malayanus /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna
-#
-#RepeatModeler -database malayanus -threads 40 -LTRStruct
-#
-#RepeatMasker -lib malayanus-families.fa -dir . -e rmblast -xsmall -pa 20 -s /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna
-#
-#gzip /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna
-#gzip /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna.masked
-#
-#
-#
-#gunzip /home/mdpllard/Chapter_3/bear_constraint/GCA_009660055.1_ASM966005v1_genomic.fna.gz
+BuildDatabase -name malayanus /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna
+
+RepeatModeler -database malayanus -threads 40 -LTRStruct
+
+RepeatMasker -lib malayanus-families.fa -dir . -e rmblast -xsmall -pa 20 -s /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna
+
+gzip /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna
+gzip /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna.masked
+
+
+
+gunzip /home/mdpllard/Chapter_3/bear_constraint/GCA_009660055.1_ASM966005v1_genomic.fna.gz
 
 BuildDatabase -name thibetanus /home/mdpllard/Chapter_3/bear_constraint/GCA_009660055.1_ASM966005v1_genomic.fna
 
@@ -53,8 +47,6 @@ RepeatMasker -lib thibetanus-families.fa -dir . -e rmblast -xsmall -pa 20 -s /ho
 
 gzip /home/mdpllard/Chapter_3/bear_constraint/GCA_009660055.1_ASM966005v1_genomic.fna
 gzip /home/mdpllard/Chapter_3/bear_constraint/GCA_009660055.1_ASM966005v1_genomic.fna.masked
-
-#/home/mdpllard/RepeatMasker/RepeatMasker -species ursus -dir . -xsmall -pa 20 -s /home/mdpllard/Chapter_3/bear_constraint/GCA_009660055.1_ASM966005v1_genomic.fna
 
 
 
@@ -69,8 +61,6 @@ RepeatMasker -lib americanus-families.fa -dir . -e rmblast -xsmall -pa 20 -s /ho
 gzip /home/mdpllard/Chapter_3/bear_constraint/GCF_020975775.1_gsc_jax_bbear_1.0_genomic.fna
 gzip /home/mdpllard/Chapter_3/bear_constraint/GCF_020975775.1_gsc_jax_bbear_1.0_genomic.fna.masked
 
-#/home/mdpllard/RepeatMasker/RepeatMasker -species ursus -dir . -xsmall -pa 20 -s /home/mdpllard/Chapter_3/bear_constraint/GCF_020975775.1_gsc_jax_bbear_1.0_genomic.fna
-
 
 
 gunzip /home/mdpllard/Chapter_3/bear_constraint/GCF_023065955.2_UrsArc2.0_genomic.fna.gz
@@ -84,4 +74,3 @@ RepeatMasker -lib arctos-families.fa -dir . -e rmblast -xsmall -pa 20 -s /home/m
 gzip /home/mdpllard/Chapter_3/bear_constraint/GCF_023065955.2_UrsArc2.0_genomic.fna
 gzip /home/mdpllard/Chapter_3/bear_constraint/GCF_023065955.2_UrsArc2.0_genomic.fna.masked
 
-#/home/mdpllard/RepeatMasker/RepeatMasker -species ursus -dir . -xsmall -pa 20 -s /home/mdpllard/Chapter_3/bear_constraint/GCF_023065955.2_UrsArc2.0_genomic.fna
