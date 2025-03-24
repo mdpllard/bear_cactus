@@ -1,0 +1,6 @@
+((Tremarctos_ornatus, Ursus_maritimus)Anc_UrsusTremarctos, Ailuropoda_melanoleuca)fullTreeAnc220;
+
+Tremarctos_ornatus /home/mdpllard/Chapter_3/bear_constraint/GCA_028551375.1_Tremarctos_ornatus_HiC_genomic.fna.gz
+Ursus_maritimus /home/mdpllard/Chapter_3/bear_constraint/Ursus_maritimus.fa
+Ailuropoda_melanoleuca /home/mdpllard/Chapter_3/bear_constraint/Ailuropoda_melanoleuca.fa
+fullTreeAnc220 /home/mdpllard/Chapter_3/bear_constraint/fullTreeAnc220.fa

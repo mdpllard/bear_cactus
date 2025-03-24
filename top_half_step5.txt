@@ -1,0 +1,5 @@
+(Anc_arctos, Ursus_americanus)Anc_americanus;
+
+Anc_arctos /home/mdpllard/Chapter_3/bear_constraint/Anc_arctos.fa
+Ursus_americanus /home/mdpllard/Chapter_3/bear_constraint/GCF_020975775.1_gsc_jax_bbear_1.0_genomic.fna.masked.gz
+Anc_americanus /home/mdpllard/Chapter_3/bear_constraint/Anc_americanus.fa

@@ -1,0 +1,5 @@
+(Anc_UrsusTremarctos, Ailuropoda_melanoleuca)fullTreeAnc220;
+
+Anc_UrsusTremarctos /home/mdpllard/Chapter_3/bear_constraint/Anc_UrsusTremarctos.fa
+Ailuropoda_melanoleuca /home/mdpllard/Chapter_3/bear_constraint/Ailuropoda_melanoleuca.fa
+fullTreeAnc220 /home/mdpllard/Chapter_3/bear_constraint/fullTreeAnc220.fa

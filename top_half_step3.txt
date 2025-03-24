@@ -1,0 +1,5 @@
+(Anc_thibetanus, Ursus_malayanus)Anc_malayanus;
+
+Anc_thibetanus /home/mdpllard/Chapter_3/bear_constraint/Anc_thibetanus.fa
+Ursus_malayanus /home/mdpllard/Chapter_3/bear_constraint/GCA_028533245.1_Helarctos_malayanus_HiC_genomic.fna.masked.gz
+Anc_malayanus /home/mdpllard/Chapter_3/bear_constraint/Anc_malayanus.fa

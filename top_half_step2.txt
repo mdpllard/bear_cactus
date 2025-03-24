@@ -1,0 +1,5 @@
+(Anc_malayanus, Tremarctos_ornatus)Anc_UrsusTremarctos;
+
+Anc_malayanus /home/mdpllard/Chapter_3/bear_constraint/Anc_malayanus.fa
+Tremarctos_ornatus /home/mdpllard/Chapter_3/bear_constraint/GCA_028551375.1_Tremarctos_ornatus_HiC_genomic.fna.gz
+Anc_UrsusTremarctos /home/mdpllard/Chapter_3/bear_constraint/Anc_UrsusTremarctos.fa
