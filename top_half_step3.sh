@@ -6,9 +6,6 @@
 #SBATCH --mem-per-cpu=19000       # in megabytes, unless unit explicitly stated
 #SBATCH --error=%J.err         # redirect stderr to this file
 #SBATCH --output=%J.out        # redirect stdout to this file
-#SBATCH --mail-user=mdpllard@memphis.edu  # email address used for event notification
-#SBATCH --mail-type=end                                   # email on job end
-#SBATCH --mail-type=fail                                  # email on job failure
 #SBATCH --time=5-00:00:00
 
 
